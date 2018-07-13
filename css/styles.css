@@ -58,6 +58,12 @@ body {
   border-color: purple;
   border-right: 4px;
 }
-#submit{
+
+#submit {
   margin-top: 12px;
+}
+
+#type {
+  opacity: 0.3;
+  color: red;
 }
