@@ -38,3 +38,8 @@
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+
+#head {
+  background-image: url(../images/head.jpg);\
+  color: white;
+}
