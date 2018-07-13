@@ -1,3 +1,6 @@
-$('[data-text]').on('keyup', function(){
-  $(this).attr('data-text', $(this).text());
-});
+$(document).ready(function(){
+  $("form").click(function(event){
+    event.preventDefault();
+    
+  })
+})
