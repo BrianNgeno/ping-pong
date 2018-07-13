@@ -6,7 +6,7 @@ $(document).ready(function() {
     var input = parseInt(userInput);
     rick(input);
     web.forEach(function(input) {
-      $("#user-output").append("<li>" +input +"</li>");
+      $("#user-output").append("<li>" + input + "</li>");
     });
   });
 });
@@ -14,22 +14,16 @@ $(document).ready(function() {
 var web = [];
 
 function rick(input) {
-  for (index = 1; index <= input; index++){
-   if (index % 15 === 0) {
+  for (index = 1; index <= input; index++) {
+    if (index % 15 === 0) {
       web.push("Ping-Pong");
+    } else if (index % 3 === 0) {
+      web.push("Ping");
+    } else if (index % 5 === 0) {
+      web.push("pong");
+    } else; {
+      web.push(index);
     }
-
-  	else if (index % 3 === 0){
-    web.push("Ping");
-  	}
-
-  	else if(index % 5 === 0){
-    web.push("pong");
-  	}
-
-  	else;{
-    web.push(index);
-  }
   }
 
 }
