@@ -45,8 +45,7 @@
   text-align: center;
   padding-bottom: 100px;
   font-style: italic;
-  font-family: system-ui;
-  background-size: contain;
+  font-family: 'Lobster', cursive;
 }
 
 body {
