@@ -1,5 +1,5 @@
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #8080ff;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -28,7 +28,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #8080ff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -36,10 +36,28 @@
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #4dd2ff;
 }
 
 #head {
-  background-image: url(../images/head.jpg);\
+  background-image: url(../images/head.jpg);
   color: white;
+  text-align: center;
+  padding-bottom: 100px;
+  font-style: italic;
+  font-family: system-ui;
+  background-size: contain;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+#body-side {
+  border-color: purple;
+  border-right: 4px;
+}
+#submit{
+  margin-top: 12px;
 }
