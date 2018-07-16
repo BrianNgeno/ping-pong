@@ -13,6 +13,7 @@ $(document).ready(function() {
 //business logic
 var tabs = [];
 var index;
+
 function rick(y) {
   for (index = 1; index <= y; index++) {
     if (index % 15 === 0) {
@@ -21,7 +22,7 @@ function rick(y) {
       tabs.push("Ping");
     } else if (index % 5 === 0) {
       tabs.push("pong");
-    } else; {
+    } else {
       tabs.push(index);
     }
   }
