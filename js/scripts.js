@@ -1,29 +1,41 @@
 //user logic
 $(document).ready(function() {
-  $("form").click(function(event) {
+  $("form").submit(function(event) {
     event.preventDefault();
-    var userInput = $("input#type").val();
+    var userInput = $("#type").val();
     var input = parseInt(userInput);
     rick(input);
-    web.forEach(function(input) {
-      $("#user-output").append("<li>" + input + "</li>");
+    tabs.forEach(function(tab) {
+      $("#user-output").append("<li>" + tab + "</li>");
     });
   });
 });
 //business logic
-var web = [];
-
-function rick(input) {
-  for (index = 1; index <= input; index++) {
+var tabs = [];
+var index;
+function rick(y) {
+  for (index = 1; index <= y; index++) {
     if (index % 15 === 0) {
-      web.push("Ping-Pong");
+      tabs.push("Ping-Pong");
     } else if (index % 3 === 0) {
-      web.push("Ping");
+      tabs.push("Ping");
     } else if (index % 5 === 0) {
-      web.push("pong");
+      tabs.push("pong");
     } else; {
-      web.push(index);
+      tabs.push(index);
     }
   }
-
 }
+// $(document).ready(function() {
+//   $("form").click(function(event) {
+//     alert("sign In here to Begin Game!");
+//       });
+//     });
+
+$(document).ready(function() {
+  $(".signupbtn").click(function(event) {
+    $(".container").hide();
+    $(".game").show();
+    event.preventDefault();
+  });
+});
